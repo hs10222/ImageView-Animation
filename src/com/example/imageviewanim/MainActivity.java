@@ -27,6 +27,9 @@ public class MainActivity extends Activity {
         arr_bmp = new int[]{R.drawable.a21,R.drawable.a23,R.drawable.a25,R.drawable.a26,R.drawable.a28,R.drawable.a29};
         mView = new AnimImageView(this, arr_bmp);
         mView.startAnim();
+        
+        
+        
         LinearLayout.LayoutParams llp_view = new LinearLayout.LayoutParams(200, 200);
         ll_main.setGravity(Gravity.CENTER);
         ll_main.addView(mView, llp_view);
