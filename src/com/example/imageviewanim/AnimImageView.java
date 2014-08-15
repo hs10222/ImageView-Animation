@@ -77,10 +77,7 @@ public class AnimImageView extends ImageView{
 		public void run() {
 			while(isRun){
 				try {
-					niFame++;
-					if(niFame % (arr_Bmp.length-1) == 0){
-						niFame = 0;
-					}
+					niFame = (++niFame) % (arr_Bmp.length);
 					Thread.sleep(200);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
